@@ -7,7 +7,6 @@
   --font-electro: "Electrolize", sans-serif;
   --color-card: #1E293B;
   --color-btn: #F97316
-
 }
 
 @plugin "daisyui";
@@ -67,32 +66,40 @@ header {
 }
 
 
-.item.img3 {
+.img3 {
   background-image: url('/public/media/MassEffectAndromedaFeature2.jpg');
+  background-position: 37% center;
 }
 
 .img2 {
   background-image: url('/public/media/marvel-s-wolverine-ci-regala-un-altra-immagine-cover68d93147c781d.jpg');
+  background-position: 25% center;
 }
 
 .img1 {
   background-image: url('/public/media/resident-evil-9-il-protagonista-e-stato-svelato-da-un-noto-insider.webp');
+  background-position: 20% center;
+
 }
 
 .img0 {
   background-image: url('/public/media/monster-hunter-wilds-v1-1184611-1280x720.webp');
+  background-position: 20% 16%;
+
 }
 
 .img4 {
   background-image: url('/public/media/witcher-4-ciri-cover.webp');
+  background-position: 43% center;
 }
 
 .img5 {
   background-image: url('/public/media/pragmata2.jpg.webp');
-  background-position: 0px 0.1px;
+  background-position: 20% 30%;
   background-repeat: no-repeat;
 
 }
+
 
 .content {
   width: min(30vw, 400px);
@@ -107,15 +114,17 @@ header {
 }
 
 .rev-header .content .title {
-  font: 400 2rem var(--font-roboto);
+  font-weight: 400;
+  font-family: var(--font-roboto);
   text-transform: uppercase;
 }
 
 .rev-header .content .description {
   line-height: 1.7;
   margin: 1rem 0 1.5rem;
-  font-size: 1rem;
-  font: 400 1.3rem var(--font-electro);
+  font-weight: 400;
+  font-family: var(--font-electro);
+  font-size: large;
 }
 
 .rev-header .content button {
@@ -170,58 +179,66 @@ header {
 }
 
 
-@media (width > 650px) and (width < 900px) {
-  .rev-header .content .title {
-    font-size: 1rem;
+/* Media Query Navbar */
+
+@media screen and (max-width:768px) {
+  .logo{
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 0.75rem;
+  }
+}
+
+
+
+/* Media Query header */
+@media screen and (max-width:768px) {
+
+   .rev-header .content {
+    width: 70%;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+  }
+   .img1{
+    background-position: 0px 1px;
+   }
+   .img2 {
+    background-position: 20% center;
+  }
+  .img3{
+    background-position: 38% center;
   }
 
-  .rev-header .content .description {
-    font-size: 0.7rem;
+  .img4 {
+    background-position: 43% center;
   }
-
-  .rev-header .content button {
-    font-size: 0.7rem;
-  }
-
-
+ 
   .rev-header .item {
     width: 160px;
     height: 270px;
   }
 
   .rev-header .item:nth-child(3) {
-    left: 50%;
+    display: none;
   }
 
   .rev-header .item:nth-child(4) {
-    left: calc(50% + 170px);
+    display: none;
   }
 
   .rev-header .item:nth-child(5) {
-    left: calc(50% + 340px);
+    display: none;
   }
 
   .rev-header .item:nth-child(6) {
-    left: calc(50% + 510px);
-    opacity: 0;
+    display: none;
   }
 }
 
 
-@media (width < 650px) {
-  .rev-header .content .title {
-    font-size: 0.9rem;
+@media screen and (min-width:768px) and (max-width:1150px) {
+
+  .rev-header{
+    height:590px;
   }
-
-
-  .rev-header .content .description {
-    font-size: 0.65rem;
-  }
-
-  .rev-header .content button {
-    font-size: 0.7rem;
-  }
-
 
   .rev-header .item {
     width: 130px;
@@ -241,7 +258,6 @@ header {
   }
 
   .rev-header .item:nth-child(6) {
-    left: calc(50% + 420px);
-    opacity: 0;
+    display:none;
   }
 }
