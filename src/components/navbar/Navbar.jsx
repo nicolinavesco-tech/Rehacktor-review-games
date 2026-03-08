@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { BsSearch } from "react-icons/bs";
-import { FaRegStar } from "react-icons/fa";
-import { FaUserAstronaut } from "react-icons/fa";
+import { FaRegStar, FaUserAstronaut } from "react-icons/fa";
 import { IoDiceOutline } from "react-icons/io5";
 import { useState, useEffect, useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgUserList } from "react-icons/cg";
 import { IoMdLogIn } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
+import Default from "../../assets/default.png";
+import supabase from "../../database/supabase";
 
 
 export default function Navbar() {
@@ -34,6 +34,20 @@ export default function Navbar() {
         }
         getAllGenres();
     }, []);
+
+    const [avatarUrl, setAvatarUrl] = useState();
+
+    const download_avatar = async () => {
+        if (profile) {
+            const { data, error } = await supabase.storage.from("avatars").download(profile.avatar_url);
+            const url = URL.createObjectURL(data);
+            setAvatarUrl(url);
+        }
+    };
+
+    useEffect(() => {
+        download_avatar();
+    }, [profile]);
 
     return (
         <>
@@ -115,10 +129,12 @@ export default function Navbar() {
                     )) || (
                             <>
                                 <div className="dropdown dropdown-end">
-                                    <div tabIndex="0" role="button" class="m-1">
-                                     <span className="flex gap-3"> <Link to="" className=""><FaUserAstronaut size={24} /></Link>{profile.username}</span>   
+                                    <div tabIndex="0" role="button" class="m-1 flex items-center gap-3">
+                                        <Link to="" className=""><img src={avatarUrl ?? Default} alt="Profile Image" className="rounded-full w-[50px] h-[50px]" />
+                                        </Link>{profile.username}
                                     </div>
                                     <ul tabIndex="-1" className="mt-3 dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                                        <li><Link to="/auth/profile">Profilo</Link></li>
                                         <li onClick={handleLogout}>
                                             <button>Logout</button>
                                         </li>
