@@ -44,7 +44,7 @@ export default function Register() {
                                 maxLength: { value: 20, message: "Massimo 20 caratteri" },
                             })}
                         />
-                        {errors.first_name && <p className="text-error">{errors.first_name.message}</p>}
+                        {errors.first_name && <p className="text-error mt-1">{errors.first_name.message}</p>}
                     </div>
 
                     <div>
@@ -57,7 +57,7 @@ export default function Register() {
                                 maxLength: { value: 20, message: "Massimo 20 caratteri" },
                             })}
                         />
-                        {errors.last_name && <p className="text-error">{errors.last_name.message}</p>}
+                        {errors.last_name && <p className="text-error mt-1">{errors.last_name.message}</p>}
                     </div>
                     <div>
                         <input
@@ -69,7 +69,7 @@ export default function Register() {
                                 maxLength: { value: 20, message: "Massimo 20 caratteri" },
                             })}
                         />
-                        {errors.username && <p className="text-error">{errors.username.message}</p>}
+                        {errors.username && <p className="text-error mt-1">{errors.username.message}</p>}
                     </div>
 
                     <div>
@@ -79,7 +79,7 @@ export default function Register() {
                             placeholder="mario@rossi.com"
                             {...register("email", { required: "Questo campo è obligatorio" })}
                         />
-                        {errors.email && <p className="text-error">{errors.email.message}</p>}
+                        {errors.email && <p className="text-error mt-1">{errors.email.message}</p>}
                     </div>
 
                     <div>
@@ -92,7 +92,7 @@ export default function Register() {
                                 minLength: { value: 8, message: "Minimo 8 caratteri" },
                             })}
                         />
-                        {errors.password && <p className="text-error">{errors.password.message}</p>}
+                        {errors.password && <p className="text-error mt-1">{errors.password.message}</p>}
                     </div>
 
                     <div>
@@ -104,7 +104,7 @@ export default function Register() {
                                 required: "Password obbligatoria", minLength: { value: 8, message: "Minimo 8 caratteri" },
                             })}
                         />
-                        {errors.confirm_password && <p className="text-error">{errors.confirm_password.message}</p>}
+                        {errors.confirm_password && <p className="text-error mt-1">{errors.confirm_password.message}</p>}
                     </div>
 
                     <button type="submit" className="btn bg-(--color-btn) hover:bg-(--color-btn-hover) mt-4 text-l">

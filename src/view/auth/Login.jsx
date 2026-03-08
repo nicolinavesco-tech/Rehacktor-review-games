@@ -33,14 +33,14 @@ export default function Login() {
 
                             <label className="label"></label>
                             <input type="email" className="input" placeholder="Email" {...register('email', { required: "Questo campo è obligatorio" })} />
-                            {errors.email && <p className="text-red-600">{errors.email.message}</p>}
+                            {errors.email && <p className="text-red-600 mt-2">{errors.email.message}</p>}
                         </div>
 
                         <div>
 
                             <label className="label"></label>
                             <input type="password" className="input" placeholder="Password" {...register('password', { required: "La password è obligatoria" })} />
-                            {errors.password && <p className="text-red-600">{errors.password.message}</p>}
+                            {errors.password && <p className="text-red-600 mt-2">{errors.password.message}</p>}
                         </div>
                         <button className="btn bg-(--color-btn) hover:bg-(--color-btn-hover) mt-4 text-l">Login</button>
                     </fieldset>

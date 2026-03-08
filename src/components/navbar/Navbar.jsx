@@ -112,10 +112,10 @@ export default function Navbar() {
                     </label>
 
                     <Link to="" className=""><FaRegStar size={24} /></Link>
-                    {(!user && (
+                    {(!user && !profile && (
                         <>
                             <div className="dropdown dropdown-end">
-                                <div tabIndex="0" role="button" class="m-1">
+                                <div tabIndex="0" role="button" className="m-1">
                                     <Link to="" className=""><FaUserAstronaut size={24} /></Link>
                                 </div>
                                 <ul tabIndex="-1" className="mt-3 dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
@@ -131,7 +131,7 @@ export default function Navbar() {
                                 <div className="dropdown dropdown-end">
                                     <div tabIndex="0" role="button" class="m-1 flex items-center gap-3">
                                         <Link to="" className=""><img src={avatarUrl ?? Default} alt="Profile Image" className="rounded-full w-[50px] h-[50px]" />
-                                        </Link>{profile.username}
+                                        </Link>{profile?.username}
                                     </div>
                                     <ul tabIndex="-1" className="mt-3 dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                                         <li><Link to="/auth/profile">Profilo</Link></li>
