@@ -65,7 +65,7 @@ export default function ProfilePage() {
                         <div className="flex flex-col mt-5 lg:mt-50 favouriteReview">
                             <ul className="list bg-base-100 rounded-box shadow-md w-75 md:w-200" >
 
-                                <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">Your favourite games</li>
+                                <li className="px-6 pt-5 pb-3 text-sm tracking-wide text-white font-semibold">Your favourite games</li>
                                 {userFavourites && userFavourites.map((game) => {
                                     return (
 
@@ -74,12 +74,12 @@ export default function ProfilePage() {
                                             <div><img className="size-10 md:size-20 rounded-box" src={game.game_image} alt={game.game_name} /></div>
                                             <div className="space-y-2">
                                                 <div className="font-bold">{game.game_name}</div>
-                                                <div className="text-xs uppercase font-semibold opacity-60">About this game</div>
+                                                <div className="text-xs uppercase font-semibold text-orange-400 tracking-wide mt-1">About this game</div>
                                                 <p className="list-col-wrap text-xs">
                                                     {game.game_description || "No description available."}
                                                 </p>
                                             </div>
-                                            <div className="flex flex-col gap-5 md:gap-0 md:flex-row">
+                                            <div className="flex flex-col items-center gap-5 md:gap-0 md:flex-row">
 
                                                 <button className="flex flex-col md:flex-row btn btn-square btn-ghost  md:w-25">
                                                     <FaClock className="text-orange-400" /> {game.game_playtime} H

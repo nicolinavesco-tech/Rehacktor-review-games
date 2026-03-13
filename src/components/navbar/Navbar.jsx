@@ -51,7 +51,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="navbar gap-2 md:gap-0 bg-transparent absolute z-50">
+            <div className="navbar gap-2 md:gap-0 absolute z-50 bg-black/20">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,14 +59,14 @@ export default function Navbar() {
                         </div>
                         <ul
                             tabIndex={-1}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/new'>New</Link></li>
+                            className="menu menu-sm dropdown-content mt-3 w-56 rounded-2xl p-2 shadow-xl bg-slate-900/95 text-slate-100 border border-white/10">
+                            <li><Link to='/' className="hover:bg-white/10 rounded-lg">Home</Link></li>
+                            <li><Link to='/new' className="hover:bg-white/10 rounded-lg">New</Link></li>
 
                             <li>
                                 <details>
-                                    <summary className=''>Genres</summary>
-                                    <ul className="p-5 bg-base-100 w-40 z-1">
+                                    <summary className='hover:bg-white/10 rounded-lg'>Genres</summary>
+                                    <ul className="p-5 bg-slate-950/90 w-40 z-1">
                                         {genres.slice(0, 8).map((genre) => {
                                             return (
                                                 <li className="mb-2" key={genre.id}>
@@ -77,18 +77,18 @@ export default function Navbar() {
                                     </ul>
                                 </details>
                             </li>
-                            <li><Link to='/trending'>Trending</Link></li>
+                            <li><Link to='/trending' className="hover:bg-white/10 rounded-lg">Trending</Link></li>
                         </ul>
                     </div>
                     <Link to="/"><img src="/media/logo.png" alt="Logo sito" className="logo w-24 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]" /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex items-center">
-                        <li className="text-xl"><Link to="/">Home</Link></li>
-                        <li className='text-xl'><Link to="/new">New</Link></li>
+                        <li className="text-xl"><Link to="/" className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)">Home</Link></li>
+                        <li className='text-xl'><Link to="/new" className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)] text-white">New</Link></li>
                         <li>
                             <details>
-                                <summary className='text-xl'>Genres</summary>
+                                <summary className='text-xl text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)'>Genres</summary>
                                 <ul className="p-5 bg-base-100 w-40 z-1">
                                     {genres.slice(0, 8).map((genre) => {
                                         return (
@@ -100,8 +100,8 @@ export default function Navbar() {
                                 </ul>
                             </details>
                         </li>
-                        <li className="text-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"><Link to="/trending">Trending</Link></li>
-                        <li className="text-xl"><Link to="">FAQ</Link></li>
+                        <li className="text-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]"><Link to="/trending" className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)">Trending</Link></li>
+                        <li className="text-xl"><Link to="" className="text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.95)]">FAQ</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-2 md:gap-5 me-4 ">

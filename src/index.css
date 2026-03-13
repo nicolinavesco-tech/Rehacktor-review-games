@@ -70,28 +70,34 @@
 .img3 {
   background-image: url('/public/media/MassEffectAndromedaFeature2.jpg');
   background-position: 37% center;
+  
 }
 
 .img2 {
   background-image: url('/public/media/marvel-s-wolverine-ci-regala-un-altra-immagine-cover68d93147c781d.jpg');
   background-position: 25% center;
+  
 }
 
 .img1 {
   background-image: url('/public/media/resident-evil-9-il-protagonista-e-stato-svelato-da-un-noto-insider.webp');
   background-position: 20% center;
+ 
+
 
 }
 
 .img0 {
   background-image: url('/public/media/monster-hunter-wilds-v1-1184611-1280x720.webp');
   background-position: 20% 16%;
-
+ 
 }
 
 .img4 {
   background-image: url('/public/media/witcher-4-ciri-cover.webp');
   background-position: 43% center;
+  
+
 }
 
 .img5 {
@@ -109,7 +115,7 @@
   left: 3rem;
   transform: translateY(-50%);
   color: white;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9);
   opacity: 0;
   display: none;
 }
@@ -128,14 +134,17 @@
   font-size: large;
 }
 
+
 .rev-header .content button {
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   background: var(--color-btn);
-  border-radius: 0.25rem;
-  padding: 0.75rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
+
+  font-weight:600;
 }
 
 

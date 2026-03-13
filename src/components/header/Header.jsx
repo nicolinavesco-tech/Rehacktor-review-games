@@ -35,7 +35,7 @@ export default function Header() {
     return (
         <>
             <header className="rev-header">
-                <div className="absolute top-25 left-12 z-20 space-y-2 headerTitle">
+                <div className="absolute top-30 left-12 z-20 space-y-2 headerTitle">
                     <label className="input searchBarProfile md:hidden w-70">
                         <input type="search" required placeholder="Search" onChange={handleChange} />
                         <Link to={`/search/${slug}`}><BsSearch /></Link>
