@@ -47,12 +47,12 @@ export default function ProfilePage() {
                     <section className="flex flex-col md:flex-row md:justify-evenly items-center px-36 profilePage">
                         <div className="flex justify-center flex-col-reverse items-center">
                             <article className=" bg-black/70 backdrop-blur-md border-gray-700 rounded-2xl border text-center p-10 w-[320px] md:w-[350px]  h-[350px] space-y-3">
-                                <h3 className="font-bold text-2xl mt-3">Your profile detail: </h3>
-                                <p className="mt-5">Name and Surname: {profile.first_name} {profile.last_name}</p>
-                                <p>Username: {profile.username}</p>
-                                <p>Email: {user.email}</p>
+                                <h3 className="font-bold text-2xl mt-3 text-white">Your profile detail: </h3>
+                                <p className="mt-5 text-white">Name and Surname: {profile.first_name} {profile.last_name}</p>
+                                <p className="text-white">Username: {profile.username}</p>
+                                <p className="text-white">Email: {user.email}</p>
 
-                                <Link to="/auth/profile/settings" className="mt-4 btn bg-(--color-btn) hover:bg-(--color-btn-hover)">Settings</Link>
+                                <Link to="/auth/profile/settings" className="mt-4 btn bg-(--color-btn) hover:bg-(--color-btn-hover) text-white">Settings</Link>
                             </article>
                             <article className="pt-5 md:pt-20 flex flex-col items-center w-[350px]">
                                 <img src={avatarUrl ?? Default} alt="Profile Image" className="rounded-full w-[100px] h-[100px] md:w-[200px] md:h-[200px] mx-auto -translate-y-[-30px] border-4 border-gray-700 shadow-xl" />
