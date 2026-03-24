@@ -34,7 +34,7 @@ export default function Homepage() {
 
                             <h2 className="text-xs uppercase tracking-wider text-(--color-btn) pt-6 font-semibold">Ultime Notizie</h2>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src={godOfWar} alt="God of War" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
+                                <img src={godOfWar} alt="God of War" className="w-[110px] h-[80px] rounded-lg flex-shrink-0 object-cover" />
                                 <div className="flex flex-col">
 
                                     <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Red Dead Redemption torna a far parlare di sé: nuovi dettagli sul possibile remake</h3></Link>
@@ -42,7 +42,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src={gta} alt="Gta" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
+                                <img src={gta} alt="Gta" className="w-[110px] h-[80px]  rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
                                     <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">GTA VI promette un mondo di gioco enorme: emergono nuovi dettagli sul gameplay</h3></Link>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">Il prossimo capitolo della serie Grand Theft Auto punta a ridefinire il genere open world. Le ultime informazioni parlano di una mappa..</p>
@@ -56,7 +56,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src={prince} alt="Prince of Persia" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
+                                <img src={prince} alt="Prince of Persia" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
 
 
@@ -65,7 +65,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                             <div className="border-b-0 border-white/10 pb-4 flex gap-4 items-center">
-                                <img src={readDead} alt="Read Dead" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
+                                <img src={readDead} alt="Read Dead" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
                                     <h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Prince of Persia torna sotto i riflettori con il nuovo capitolo della saga</h3>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">La storica serie di Ubisoft è pronta a tornare con nuove meccaniche di gameplay e un rinnovato stile visivo. Il gioco promette di combinare l'azione classica con elementi moderni.</p>
