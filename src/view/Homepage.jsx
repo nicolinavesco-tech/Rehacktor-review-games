@@ -8,7 +8,7 @@ import godOfWar from "../assets/god.jpg";
 import gta from "../assets/gta.jpg";
 import ghost from "../assets/ghost.avif";
 import prince from "../assets/prince.jpg";
-import readDead from "../assets/readdead.jpg";
+import readDead from "../assets/reddead.jpg";
 
 export default function Homepage() {
     const { games, topRated, upcoming } = useLoaderData();
