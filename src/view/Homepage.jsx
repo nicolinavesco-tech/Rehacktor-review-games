@@ -29,7 +29,7 @@ export default function Homepage() {
 
                             <h2 className="text-xs uppercase tracking-wider text-(--color-btn) pt-6 font-semibold">Ultime Notizie</h2>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src="/public/media/Red_Dead_Redemption_II.jpg" alt="" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
+                                <img src="/public/media/red_dead_redemption_II.jpg" alt="" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
 
                                     <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Red Dead Redemption torna a far parlare di sé: nuovi dettagli sul possibile remake</h3></Link>
@@ -37,7 +37,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src="/public/media/GTA.jpg" alt="" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
+                                <img src="/public/media/gta.jpg" alt="" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
                                     <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">GTA VI promette un mondo di gioco enorme: emergono nuovi dettagli sul gameplay</h3></Link>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">Il prossimo capitolo della serie Grand Theft Auto punta a ridefinire il genere open world. Le ultime informazioni parlano di una mappa..</p>
@@ -51,7 +51,7 @@ export default function Homepage() {
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src="/public/media/God_of_War.jpg" alt="" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
+                                <img src="/public/media/god_of_War.jpg" alt="" className="w-[110px] h-[80px] object-cover rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
 
 
