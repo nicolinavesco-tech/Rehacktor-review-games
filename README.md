@@ -1,8 +1,1 @@
-Le chiavi dal file .env
 
-
-VITE_API_KEY="0ba2d81779d84c779a8915bd8a347b3c"
-
-
-VITE_SUPABASE_URL="https://xuvooujlrhpwbsoyemgy.supabase.co"
-VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY="sb_publishable_KbU_IivDGBCIoRg31NpSuA_L9opnv-x"
