@@ -51,7 +51,7 @@ export default function Header() {
                     <li className='img0 item '>
                         <div className='content'>
                             <h2 className='title pt-2 md:pt-0 lg:text-3xl'>Monster Hunter Wilds</h2>
-                            <p className='description'> Monster Hunter Wilds is the new installment in Capcom’s famous series. Players will explore vast dynamic ecosystems where monsters interact with each other and with the environment. With new weapons, gigantic creatures, and an even more vibrant world, the game promises epic hunts both in single player and in cooperative mode.  </p>
+                            <p className='description'> Monster Hunter Wilds is the new installment in Capcom’s famous series. Players will explore vast dynamic ecosystems where monsters interact with each other and with the environment. With new weapons, gigantic creatures, and an even more vibrant world..  </p>
                             <button>Read More</button>
                         </div>
                     </li>
