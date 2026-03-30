@@ -18,7 +18,7 @@ export default function Homepage() {
 
                 <section className="pt-15 container mx-auto ">
 
-                    <h1 className="font-electro text-3xl  font-bold border-b-2 ">Games of the Year 2026</h1>
+                    <h1 className="font-electro text-3xl pl-2 md:pl-2 font-bold border-b-2 ">Games of the Year 2026</h1>
                     <div className="flex flex-col md:flex-col lg:flex-row justify-evenly">
 
                         <div className="mt-5">
@@ -76,7 +76,7 @@ export default function Homepage() {
 
                 </section>
                 <section className="pt-15 container mx-auto">
-                    <h1 className="font-electro text-3xl font-bold border-b-2">Top Rated Games</h1>
+                    <h1 className="font-electro text-3xl pl-3 md:pl-2 font-bold border-b-2">Top Rated Games</h1>
                     <div className="mt-5">
                         <TopGamesList>
                             {topRated.map((game) => (
@@ -88,7 +88,7 @@ export default function Homepage() {
                     </div>
                 </section>
                 <section className="pt-15 container mx-auto">
-                    <h1 className="font-electro text-3xl font-bold border-b-2">Upcoming Games</h1>
+                    <h1 className="font-electro pl-3 md:pl-2 text-3xl font-bold border-b-2">Upcoming Games</h1>
                     <div className="mt-5">
                         <UpcomingGamesList>
                             {upcoming.map((game) => (
