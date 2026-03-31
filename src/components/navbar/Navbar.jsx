@@ -55,7 +55,7 @@ export default function Navbar() {
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <GiHamburgerMenu size={24} />
+                            <GiHamburgerMenu size={24} className="text-white" />
                         </div>
                         <ul
                             tabIndex={-1}

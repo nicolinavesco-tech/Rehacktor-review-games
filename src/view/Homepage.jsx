@@ -37,37 +37,35 @@ export default function Homepage() {
                                 <img src={godOfWar} alt="God of War" className="w-[110px] h-[80px] rounded-lg flex-shrink-0 object-cover" />
                                 <div className="flex flex-col">
 
-                                    <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Red Dead Redemption torna a far parlare di sé: nuovi dettagli sul possibile remake</h3></Link>
+                                    <Link to=""><h3 className="font-bold text-lg md:text-xl text-whiteleading-tight mt-1">Red Dead Redemption torna a far parlare di sé: nuovi dettagli sul possibile remake</h3></Link>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">Rockstar potrebbe essere al lavoro su una nuova versione del celebre western open world. Secondo alcune indiscrezioni..</p>
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
-                                <img src={gta} alt="Gta" className="w-[110px] h-[80px]  rounded-lg flex-shrink-0" />
+                                <img src={gta} alt="Gta" className="w-[110px] h-[80px] object-cover  rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
-                                    <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">GTA VI promette un mondo di gioco enorme: emergono nuovi dettagli sul gameplay</h3></Link>
+                                    <Link to=""><h3 className="font-bold text-lg md:text-xl text-white leading-tight mt-1">GTA VI promette un mondo di gioco enorme: emergono nuovi dettagli sul gameplay</h3></Link>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">Il prossimo capitolo della serie Grand Theft Auto punta a ridefinire il genere open world. Le ultime informazioni parlano di una mappa..</p>
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
                                 <img src={ghost} alt="Ghost of Tsushima" className="w-[110px] h-[80px]  rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
-                                    <Link to=""><h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Ghost of Tsushima continua a conquistare i giocatori: successo anche su nuove piattaforme</h3></Link>
+                                    <Link to=""><h3 className="font-bold text-lg md:text-xl text-white leading-tight mt-1">Ghost of Tsushima continua a conquistare i giocatori: successo anche su nuove piattaforme</h3></Link>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">L'avventura samurai di Sucker Punch rimane uno dei titoli più apprezzati degli ultimi anni. Tra combattimenti spettacolari e ambientazioni mozzafiato..</p>
                                 </div>
                             </div>
                             <div className="border-b border-white/10 pb-4 flex gap-4 items-center">
                                 <img src={prince} alt="Prince of Persia" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
-
-
-                                    <h3 className="font-bold text-lg md:text-xl leading-tight mt-1">God of War: il futuro della saga potrebbe portare Kratos verso nuove mitologie</h3>
+                                    <h3 className="font-bold text-lg md:text-xl text-white leading-tight mt-1">God of War: il futuro della saga potrebbe portare Kratos verso nuove mitologie</h3>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">Dopo il successo degli ultimi capitoli, molti fan si chiedono quale sarà il prossimo passo per la saga. Gli sviluppatori potrebbero esplorare nuove..</p>
                                 </div>
                             </div>
                             <div className="border-b-0 border-white/10 pb-4 flex gap-4 items-center">
                                 <img src={readDead} alt="Read Dead" className="w-[110px] h-[80px] rounded-lg flex-shrink-0" />
                                 <div className="flex flex-col">
-                                    <h3 className="font-bold text-lg md:text-xl leading-tight mt-1">Prince of Persia torna sotto i riflettori con il nuovo capitolo della saga</h3>
+                                    <h3 className="font-bold text-lg md:text-xl text-white leading-tight mt-1">Prince of Persia torna sotto i riflettori con il nuovo capitolo della saga</h3>
                                     <p className="text-sm text-gray-300 mt-2 leading-6">La storica serie di Ubisoft è pronta a tornare con nuove meccaniche di gameplay e un rinnovato stile visivo. Il gioco promette di combinare l'azione classica con elementi moderni.</p>
                                 </div>
                             </div>
